@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Android_Drone_Control</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="takeoff">takeoff</string>
+</resources>

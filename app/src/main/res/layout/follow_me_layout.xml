@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/follow_me_layout"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#394A52"
+        >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/follow_me_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/follow_me_toolbar"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <fragment
+                    android:id="@+id/follow_me_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    class="com.google.android.gms.maps.MapFragment"
+                    app:layout_collapseMode="parallax"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:hint="FollowOn"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:id="@+id/follow_me_on"
+                    android:background="@drawable/home_login_button"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/follow_me_fab"
+            android:background="@drawable/home_login_button"
+            android:layout_margin="10dp"
+            android:hint="Start"
+            android:id="@+id/follow_me_start"
+            />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/follow_me_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/exclamation_mark" />
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/follow_me_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer" />
+</android.support.v4.widget.DrawerLayout>

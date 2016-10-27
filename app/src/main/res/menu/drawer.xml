@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Drone_Control"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Drone Control"/>
+        <item
+            android:id="@+id/Follow_Me"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Follow Me"/>
+        <item
+            android:id="@+id/Follow_Of_Fix_Point"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Follow Of Fix Point"/>
+        <item
+            android:id="@+id/Live_Platform"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Live Platform"/>
+    </group>
+    <item
+        android:id="@+id/Logout"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Logout"
+        ></item>
+</menu>

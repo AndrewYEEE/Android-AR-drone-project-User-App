@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/droneselect_map"
+        class="com.google.android.gms.maps.MapFragment"
+        ></fragment>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_map"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_login_button"
+        android:hint="Reset Map"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/home_login_button"
+        android:hint="Reset All"
+        android:id="@+id/reset_all"
+        />
+</RelativeLayout>
